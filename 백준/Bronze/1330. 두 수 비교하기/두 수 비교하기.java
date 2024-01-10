@@ -1,21 +1,16 @@
-import java.lang.NumberFormatException;
-import java.util.Scanner;
+import java.io.*;
 
 public class Main {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) throws IOException {
+        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
 
-        int A = sc.nextInt();
-        int B = sc.nextInt();
+        //방법 1. split 을 이용해서 구분
+        String [] inputs = bf.readLine().split(" ");
+        int a = Integer.parseInt(inputs[0]);
+        int b = Integer.parseInt(inputs[1]);
 
-        // 비교하는 함수 작성
-        if(A == B) {
-            System.out.println("==");
-        }
-        else if(A < B) {
-            System.out.println("<");
-        }
-        else
-            System.out.println(">");
+        //삼항연산자를 사용해서 비교
+        System.out.println(a > b ? ">" : (a < b ? "<" : "=="));
+
     }
 }
