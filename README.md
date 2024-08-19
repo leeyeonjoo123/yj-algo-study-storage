@@ -1,2 +1,3 @@
 # yj-algo-study-storage
+알고리즘 문제풀이 저장소
 This is a auto push repository for Baekjoon Online Judge created with [BaekjoonHub](https://github.com/BaekjoonHub/BaekjoonHub).
